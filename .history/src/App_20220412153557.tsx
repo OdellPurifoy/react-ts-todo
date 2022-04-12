@@ -7,8 +7,6 @@ const App: React.FC = () => {
   // Define initial state of a Todo
   const [todo, setTodo] = useState<string>("");
 
-  console.log(todo)
-
   return (
     <div className="App">
       <span className="heading">Taskify</span>
