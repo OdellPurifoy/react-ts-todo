@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import InputField from './components/InputField';
-import { Todo } from './model';
+import { Todo } from './components/model';
 
 // Updated to a strictly typed react functional component
 const App: React.FC = () => {

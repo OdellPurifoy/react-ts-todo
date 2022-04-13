@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import InputField from './components/InputField';
-import { Todo } from './model';
+import { Todo } from './components/model';
 
 // Updated to a strictly typed react functional component
 const App: React.FC = () => {
@@ -14,11 +14,11 @@ const App: React.FC = () => {
   const handleAdd = (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (todo) {
-      setTodos([...todos, { id: Date.now(), todo, isDone: false } ]);
+    if(todo) {
+      setTodos([...todos, {id: Date.now(), todo, isDone: false}]);
       setTodo("");
     }
-  };
+  }
 
   console.log(todos)
 

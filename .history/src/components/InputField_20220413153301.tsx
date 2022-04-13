@@ -7,9 +7,9 @@ interface Props {
     handleAdd: (e: React.FormEvent) => void;
 }
 
-const InputField: React.FC<Props> = ({ todo, setTodo, handleAdd }: Props) => {
+const InputField: React.FC<Props> = ({ todo, setTodo }: Props) => {
   return (
-    <form className="input" onSubmit={(e) => handleAdd(e)}>
+    <form className="input" onSubmit={handleAdd}>
         <input type="input" 
         placeholder="Enter a Task" 
         className="input_box" 
